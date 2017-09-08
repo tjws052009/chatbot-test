@@ -1,12 +1,13 @@
 var restify = require('restify');
 var builder = require('botbuilder');
 var azure = require('botbuilder-azure');
+require('dotenv').config()
 
 var documentDbOptions = {
-    host: process.env.docDb.Host,
-    masterKey: process.env.docDb.key,
-    database: process.env.docDb.database,
-    collection: process.env.docDb.collection
+    host: process.env.docDb_Host,
+    masterKey: process.env.docDb_key,
+    database: process.env.docDb_database,
+    collection: process.env.docDb_collection
 };
 
 var docDbClient = new azure.DocumentDbClient(documentDbOptions);

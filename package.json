@@ -6,11 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tjws052009/chatbot-test"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "botbuilder": "^3.9.1",
     "botbuilder-azure": "^3.0.2",
+    "dotenv": "^4.0.0",
     "restify": "^5.2.0"
   }
 }
